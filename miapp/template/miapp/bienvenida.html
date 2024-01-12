@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO BANC0 CLIENTE</title>
+    <!-- Incluye los estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ebf5f7; /* Fondo celeste claro */
+            background-image: url('miapp/template/miapp/img/fondo.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #007bff; /* Azul celeste */
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        li {
+            margin: 15px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff; /* Azul celeste */
+            font-weight: bold;
+            padding: 20px 60px;
+            border: 3px solid #007bff; /* Azul celeste */
+            border-radius: 10px;
+            transition: background-color 0.3s;
+            display: inline-block;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        a:hover {
+            background-color: #008bff; /* Azul celeste */
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- Agrega el logo aquí -->
+            <h1> REGISTROS CLIENTES - COMERCIO </h1>
+        </header>
+
+        <ul>
+            <li><a href="{% url 'crear_cliente' %}" class="btn btn-primary">Crear Nuevo Cliente</a></li>
+            <li><a href="{% url 'crear_cuenta' %}" class="btn btn-primary">Crear Nueva Cuenta</a></li>
+            <li><a href="{% url 'realizar_transaccion' %}" class="btn btn-primary">Realizar Transacción</a></li>
+            <li><a href="{% url 'cliente_lista' %}" class="btn btn-primary">Ver Lista de Clientes</a></li>
+            <li><a href="{% url 'cuenta_lista' %}" class="btn btn-primary">Ver Lista de Cuentas</a></li>
+            <li><a href="{% url 'transaccion_lista' %}" class="btn btn-primary">Ver Lista de Transacciones</a></li>
+        </ul>
+    </div>
+    
+    <!-- Incluye los scripts de Bootstrap y jQuery (asegúrate de tener jQuery instalado) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
